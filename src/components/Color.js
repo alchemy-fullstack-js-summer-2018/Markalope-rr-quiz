@@ -21,7 +21,7 @@ render() {
 
   return ( 
     <li>
-      <span onCLick={this.handleClick}>{colorList}</span>
+      <span onClick={this.handleClick}>{colorList}</span>
     </li>
   );
 }

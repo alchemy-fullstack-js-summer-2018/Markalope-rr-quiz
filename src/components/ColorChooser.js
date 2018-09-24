@@ -15,7 +15,7 @@ class ColorChooser extends Component {
     loadColors: PropTypes.func,
     selectColor: PropTypes.func,
     onSelect: PropTypes.func
-  }
+  };
   
   render() { 
     const { colors, addColor } = this.props;
