@@ -20,6 +20,11 @@ class ColorChooser extends Component {
   componentDidMount() {
     this.props.loadColors(['red', 'blue', 'green']);
   }
+
+  handleSelect = () => {
+    this.props.selectColor(this.props.selectedColor);
+  };
+
   
   render() { 
     const { colors, addColor } = this.props;

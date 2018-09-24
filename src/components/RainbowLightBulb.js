@@ -27,12 +27,13 @@ render() {
 
     <section>
       <h1>This is RainbowLightBulb</h1>
-      <button onClick={this.handleClick}>
+      <button onClick={this.handleClick} style={{ backgroundColor: on ? 'yellow' : '' }}>
         {on ? 'ON' : 'OFF'}
       </button>
 
       {on && 
-      <span style={{ backgroundColor: selectedColor }} className="color">{selectedColor} </span>}
+      <span style={{ backgroundColor: selectedColor }} className="color">{selectedColor} </span>
+      }
     </section>
 
 
