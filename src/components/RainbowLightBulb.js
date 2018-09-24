@@ -6,11 +6,11 @@ import { getSelectedColor } from './reducers';
 class RainbowLightBulb extends Component {
   state = {  
     on: true
-  }
+  };
 
 static propTypes = {
   selectedColor: PropTypes.string
-}
+};
 
 handleClick = () => {
   this.setState(({ on }) => ({ on: !on }));
@@ -26,7 +26,7 @@ render() {
   return ( 
 
     <section>
-      <h1>This is RainbowLighBulb</h1>
+      <h1>This is RainbowLightBulb</h1>
       <button onClick={this.handleClick}>
         {on ? 'ON' : 'OFF'}
       </button>
