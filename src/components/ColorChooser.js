@@ -13,8 +13,8 @@ class ColorChooser extends Component {
     selectedColor: PropTypes.string,
     addColor: PropTypes.func,
     loadColors: PropTypes.func,
-    selectColor: PropTypes.func,
-    onSelect: PropTypes.func
+    onSelect: PropTypes.func,
+    selectColor: PropTypes.func
   };
 
   componentDidMount() {

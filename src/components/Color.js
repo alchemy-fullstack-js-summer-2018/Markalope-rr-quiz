@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 class Color extends Component {
   
   static propTypes = {
-    selectColor: PropTypes.func,
+    onSelect: PropTypes.func,
     color: PropTypes.string
   };
 
 handleClick = () => {
-  const { color, selectColor } = this.props;
-  selectColor(color);
+  const { color, onSelect } = this.props;
+  onSelect(color);
 };
 
 

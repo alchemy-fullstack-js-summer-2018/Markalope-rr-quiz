@@ -11,14 +11,15 @@ class AddColor extends Component {
     submit: PropTypes.func
   };
 
-  handleChange = ({ target }) => {
-    this.setState({ [target.name]: target.value });
-  };
-
   handleSubmit = event => {
     event.preventDefault();
     this.props.addColor(this.state.color);
   };
+  
+  handleChange = ({ target }) => {
+    this.setState({ [target.name]: target.value });
+  };
+
 
   render() { 
     const { color } = this.state;
