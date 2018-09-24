@@ -1,6 +1,6 @@
 import { COLORS_LOAD, COLORS_ADD, SELECT_COLOR } from './reducers';
 
-const colorList = ['red', 'blue', 'green'];
+const colorList = ['red', 'green', 'blue'];
 
 export const loadColors = () => {
   return {
