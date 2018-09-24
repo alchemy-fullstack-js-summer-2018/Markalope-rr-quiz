@@ -17,7 +17,7 @@ export function colors(state = [], { type, payload }) {
 
 }
 
-export function selectedColor(state = "yellow", { type, payload }) {
+export function selectedColor(state = 'yellow', { type, payload }) {
   switch(type) {
     case SELECT_COLOR:
       return payload;
