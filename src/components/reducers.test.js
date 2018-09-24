@@ -1,4 +1,4 @@
-import { colors, COLORS_LOAD, COLORS_ADD } from './reducers';
+import { colors, COLORS_LOAD, COLORS_ADD, selectedColor } from './reducers';
 
 describe ('color reducers', () => {
 
@@ -29,6 +29,13 @@ describe ('color reducers', () => {
     });
 
     //COLOR_SELECT
+    describe ('selected color', () => {
+      it('default color is yellow', () => {
+        const state = selectedColor('yellow', {});
+        expect(state).toBe('yellow');
+      });
+    });
+
   });
 
 
