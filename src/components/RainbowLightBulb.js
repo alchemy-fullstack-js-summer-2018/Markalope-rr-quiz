@@ -13,7 +13,7 @@ static propTypes = {
 }
 
 handleClick = () => {
-  this.setState(({ on }) => ({ on: false }));
+  this.setState(({ on }) => ({ on: !on }));
 };
 
 
