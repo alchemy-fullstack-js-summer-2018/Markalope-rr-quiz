@@ -32,7 +32,7 @@ render() {
       </button>
 
       {on && 
-      <span style={{ color: selectedColor }}> <i className="far fa-lightbulb"></i></span>}
+      <span style={{ backgroundColor: selectedColor }} className="color">{selectedColor} </span>}
     </section>
 
 
