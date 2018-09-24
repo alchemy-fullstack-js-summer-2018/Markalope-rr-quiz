@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 class AddColor extends Component {
   state = { 
-    colorList: ''
+    color: ''
   };
 
   static propTypes = {
@@ -12,12 +12,12 @@ class AddColor extends Component {
   };
 
   render() { 
-    const { colorList } = this.state;
+    const { color } = this.state;
 
 
     return ( 
       <form onSubmit={this.handleSubmit}>
-        <input type='text' value ={colorList} name='color' onChange={this.handleChange}/>
+        <input type='text' value ={color} name='color' onChange={this.handleChange}/>
         <button type='submit'>Add Color</button>
       </form>
     );
