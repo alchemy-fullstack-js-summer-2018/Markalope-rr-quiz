@@ -37,6 +37,10 @@ class ColorChooser extends Component {
   }
 }
  
-export default connect
-
-ColorChooser;
+export default connect(
+  state => ({
+    colors: getColors(state),
+    selectedColor: getSelectedColor(state)
+  }),
+  { loadColors, selectColor, addColor }
+)(ColorChooser);
